@@ -26,7 +26,7 @@ def predict():
 
             result = {
                 "filename": file.filename,
-                "probability": str(res[0][classification] * 100) + '%',
+                "probability": str(res[0][classification] * 90) + '%',
                 "conclusion": names(classification),
                 "other": str(np.round(res, 3)),
             }
